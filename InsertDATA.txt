@@ -1,0 +1,278 @@
+----------------------Insert Data
+--- Insert Table CAULACBO
+DECLARE
+  URL VARCHAR2(100) := 'D:\DoAn\UITeco\src\main\resources\ClbImages\';
+BEGIN
+  INSERT INTO CAULACBO (MACLB, TENCLB, CHUNHIEM, NGAYTHANHLAP, SOLUONGTHANHVIEN, SOLUONGTHICH, TRANGTHAI, GIOITHIEUSOLUOC, DONVITRUCTHUOC, NGAYCAPNHATGANNHAT, LOGO, BACKGROUND, TRANGTHAITUYENTHANHVIEN, PHAMVI )
+  VALUES
+  (1, N'UIT GamAPP', 23, TO_DATE('2020-01-15', 'YYYY-MM-DD'), 50, 200, 2, N'Câu Lạc Bộ dành cho người có sự đam mê khám phá về game', N'Công Nghệ Phần Mềm', TO_TIMESTAMP('2024-05-31 1:30:00', 'YYYY-MM-DD HH24:MI:SS'), utl_raw.cast_to_raw(URL || 'Logo_UITGamAPP.jpg'), utl_raw.cast_to_raw(URL || 'Cover_UITGamAPP.png'), 1, 'TRONGTRUONG');
+  
+  INSERT INTO CAULACBO (MACLB, TENCLB, CHUNHIEM, NGAYTHANHLAP, SOLUONGTHANHVIEN, SOLUONGTHICH, TRANGTHAI, GIOITHIEUSOLUOC, DONVITRUCTHUOC, NGAYCAPNHATGANNHAT, LOGO, BACKGROUND, TRANGTHAITUYENTHANHVIEN, PHAMVI )
+  VALUES
+  (2, N'UIT Chess Club', 30, TO_DATE('2019-03-20', 'YYYY-MM-DD'), 70, 300, 1, N'Câu lạc bộ cờ dành cho người đam mê cờ và chiến thuật', N'Khoa cờ', TO_TIMESTAMP('2024-05-31 12:50:00', 'YYYY-MM-DD HH24:MI:SS'), utl_raw.cast_to_raw(URL || 'Logo_UITChess.jpg'), utl_raw.cast_to_raw(URL || 'Cover_UITChess.jpg'), 0, 'TRONGTRUONG');
+  
+  INSERT INTO CAULACBO (MACLB, TENCLB, CHUNHIEM, NGAYTHANHLAP, SOLUONGTHANHVIEN, SOLUONGTHICH, TRANGTHAI, GIOITHIEUSOLUOC, DONVITRUCTHUOC, NGAYCAPNHATGANNHAT, LOGO, BACKGROUND, TRANGTHAITUYENTHANHVIEN, PHAMVI )
+  VALUES
+  (3, N'Câu lạc bộ AI', 40, TO_DATE('2018-05-10', 'YYYY-MM-DD'), 40, 150, 1, N'Câu lạc bộ về AI dành cho người đam mê về AI', N'Khoa học Máy tính', TO_TIMESTAMP('2024-05-20 10:50:00', 'YYYY-MM-DD HH24:MI:SS'), utl_raw.cast_to_raw(URL || 'Logo_CLBAI.png'), utl_raw.cast_to_raw(URL || 'Cover_CLBAI.png'), 1, 'TRONGTRUONG');
+  
+  INSERT INTO CAULACBO (MACLB, TENCLB, CHUNHIEM, NGAYTHANHLAP, SOLUONGTHANHVIEN, SOLUONGTHICH, TRANGTHAI, GIOITHIEUSOLUOC, DONVITRUCTHUOC, NGAYCAPNHATGANNHAT, LOGO, BACKGROUND, TRANGTHAITUYENTHANHVIEN, PHAMVI )
+  VALUES
+  (4, N'UIT Basketball Club', 45, TO_DATE('2021-07-25', 'YYYY-MM-DD'), 60, 250, 0, N'Câu lạc bộ Bóng rổ Trường Đại học Công nghệ thông tin - ĐHQG HCM', N'Khoa Thể Thao', TO_TIMESTAMP('2023-01-25 01:50:00', 'YYYY-MM-DD HH24:MI:SS'), utl_raw.cast_to_raw(URL || 'Logo_UITBasketball.jpg'), utl_raw.cast_to_raw(URL || 'Cover_UITBasketball.jpg'), 0, 'TRONGTRUONG');
+  
+  INSERT INTO CAULACBO (MACLB, TENCLB, CHUNHIEM, NGAYTHANHLAP, SOLUONGTHANHVIEN, SOLUONGTHICH, TRANGTHAI, GIOITHIEUSOLUOC, DONVITRUCTHUOC, NGAYCAPNHATGANNHAT, LOGO, BACKGROUND, TRANGTHAITUYENTHANHVIEN, PHAMVI )
+  VALUES
+  (5, N'Lý luận trẻ UIT', 50, TO_DATE('2017-09-05', 'YYYY-MM-DD'), 80, 400, 1, N'Câu lạc bộ Lý luận trẻ UIT trường Đại học Công nghệ Thông Tin', N'Khoa Công nghệ thông tin', TO_TIMESTAMP('2024-03-25 03:50:00', 'YYYY-MM-DD HH24:MI:SS'), utl_raw.cast_to_raw(URL || 'Logo_LyLuanTre.jpg'), utl_raw.cast_to_raw(URL || 'Cover_LyLuanTre.png'), 1, 'NGOAITRUONG');
+END;
+
+
+
+--- Insert Table HINHANH
+DECLARE
+  URL VARCHAR2(100) := 'D:\DoAn\UITeco\src\main\resources\ClbImages\';
+BEGIN
+  -- uitgamapp
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (1, utl_raw.cast_to_raw(URL || 'UITGamAPP1.jpg'), 1);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (2, utl_raw.cast_to_raw(URL || 'UITGamAPP2.jpg'), 1);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (3, utl_raw.cast_to_raw(URL || 'UITGamAPP3.jpg'), 1);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (4, utl_raw.cast_to_raw(URL || 'UITGamAPP4.jpg'), 1);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (5, utl_raw.cast_to_raw(URL || 'UITGamAPP5.jpg'), 1);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (6, utl_raw.cast_to_raw(URL || 'UITGamAPP6.jpg'), 1);
+  
+  -- uitchessclub
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (7, utl_raw.cast_to_raw(URL || 'UITChess1.jpg'), 2);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (8, utl_raw.cast_to_raw(URL || 'UITChess2.jpg'), 2);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (9, utl_raw.cast_to_raw(URL || 'UITChess3.jpg'), 2);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (10, utl_raw.cast_to_raw(URL || 'UITChess4.jpg'), 2);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (11, utl_raw.cast_to_raw(URL || 'UITChess5.jpg'), 2);
+  
+  -- caulacboAI
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (12, utl_raw.cast_to_raw(URL || 'CauLacBoAI1.jpg'), 3);
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (13, utl_raw.cast_to_raw(URL || 'CauLacBoAI2.jpg'), 3);
+  
+  -- uitbasketball
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (14, utl_raw.cast_to_raw(URL || 'UITBasketball1.jpg'), 4);
+  
+  -- lyluantre
+  INSERT INTO HINHANH (MAHINHANH, ANH, MACLB)
+  VALUES
+  (15, utl_raw.cast_to_raw(URL || 'LyLuanTre1.jpg'), 5);
+END;
+
+
+-- Insert Table CHITIETCAULACBO
+INSERT INTO CHITIETCAULACBO (MACHITIET, MACLB, EMAIL, SDT, SOLUONGDANHGIA, SAODANHGIA, LOAICLB, GIOITHIEUCHITIET, DIEULE)
+VALUES
+(1, 1, 'gamappuit.club@gmail.com', '09999999999', 123, 5, N'giáo dục - giải trí', 
+  utl_raw.cast_to_raw('Thông tin cơ bản:
+  Chào mừng bạn đến với Câu Lạc Bộ Làm Game - nơi khơi nguồn sáng tạo và phát triển các sản phẩm game độc đáo! Được thành lập bởi một nhóm sinh viên đam mê lập trình và thiết kế game tại Trường Đại học Công nghệ thông tin, chúng tôi tự hào là một trong những câu lạc bộ sáng tạo và năng động nhất trong khuôn viên trường.
+  Sứ Mệnh:
+  Câu lạc bộ Làm Game hướng tới việc tạo ra môi trường học tập và phát triển kỹ năng về lập trình, thiết kế đồ họa, âm thanh và mọi khía cạnh liên quan đến việc phát triển game. Chúng tôi mong muốn giúp các thành viên biến những ý tưởng độc đáo thành các sản phẩm game hoàn chỉnh, từ đó góp phần nâng cao trình độ chuyên môn và tạo ra những sản phẩm có giá trị.'), 
+  utl_raw.cast_to_raw('Điều 1: Mục Đích và Tôn Chỉ 
+  1. Mục đích: 
+    Câu lạc bộ Làm Game nhằm tạo ra môi trường học tập và thực hành cho các thành viên trong lĩnh vực phát triển game, bao gồm lập trình, thiết kế đồ họa, âm thanh, và quản lý dự án. 
+  2. Tôn chỉ: 
+    Khuyến khích sự sáng tạo, học hỏi lẫn nhau, và hợp tác để phát triển các sản phẩm game chất lượng, đồng thời xây dựng một cộng đồng đam mê và chuyên nghiệp.
+Điều 2: Thành Viên
+  1. Điều kiện tham gia: 
+    Bất kỳ sinh viên nào của Trường Đại học Công nghệ thông tin có đam mê và mong muốn học hỏi về phát triển game đều có thể đăng ký tham gia. 
+  2. Quyền lợi của thành viên: 
+    · Tham gia các hoạt động, workshop, và dự án do câu lạc bộ tổ chức. 
+    · Sử dụng các tài nguyên và thiết bị của câu lạc bộ cho mục đích học tập và phát triển game. 
+    · Đề xuất ý tưởng và tham gia vào quá trình quyết định của câu lạc bộ. 
+  3. Nghĩa vụ của thành viên: 
+    · Tuân thủ nội quy và điều lệ của câu lạc bộ. 
+    · Đóng góp tích cực vào các hoạt động và dự án của câu lạc bộ. 
+    · Giữ gìn và bảo quản tài sản của câu lạc bộ.'));
+
+INSERT INTO CHITIETCAULACBO (MACHITIET, MACLB, EMAIL, SDT, SOLUONGDANHGIA, SAODANHGIA, LOAICLB, GIOITHIEUCHITIET, DIEULE)
+VALUES
+(2, 2, 'uitchess.club@gmail.com', '088888888', 23, 4, N'giáo dục - giải trí', 
+  utl_raw.cast_to_raw('Thông tin cơ bản:
+  Chào mừng bạn đến với Câu Lạc Bộ Làm Cờ - nơi khơi nguồn sáng tạo và phát triển các sản phẩm độc đáo! Được thành lập bởi một nhóm sinh viên đam mê cờ tại Trường Đại học Công nghệ thông tin, chúng tôi tự hào là một trong những câu lạc bộ sáng tạo và năng động nhất trong khuôn viên trường.
+  Sứ Mệnh:
+  Câu lạc bộ cờ hướng tới việc tạo ra môi trường học tập và phát triển kỹ năng về lập trình, thiết kế đồ họa, âm thanh và mọi khía cạnh liên quan đến việc phát triển game. Chúng tôi mong muốn giúp các thành viên biến những ý tưởng độc đáo thành các sản phẩm game hoàn chỉnh, từ đó góp phần nâng cao trình độ chuyên môn và tạo ra những sản phẩm có giá trị.'), 
+  utl_raw.cast_to_raw('Điều 1: Mục Đích và Tôn Chỉ 
+  1. Mục đích: 
+    Câu lạc bộ Làm Game nhằm tạo ra môi trường học tập và thực hành cho các thành viên trong lĩnh vực phát triển game, bao gồm lập trình, thiết kế đồ họa, âm thanh, và quản lý dự án. 
+  2. Tôn chỉ: 
+    Khuyến khích sự sáng tạo, học hỏi lẫn nhau, và hợp tác để phát triển các sản phẩm game chất lượng, đồng thời xây dựng một cộng đồng đam mê và chuyên nghiệp.
+Điều 2: Thành Viên
+  1. Điều kiện tham gia: 
+    Bất kỳ sinh viên nào của Trường Đại học Công nghệ thông tin có đam mê và mong muốn học hỏi về phát triển game đều có thể đăng ký tham gia. 
+  2. Quyền lợi của thành viên: 
+    · Tham gia các hoạt động, workshop, và dự án do câu lạc bộ tổ chức. 
+    · Sử dụng các tài nguyên và thiết bị của câu lạc bộ cho mục đích học tập và phát triển game. 
+    · Đề xuất ý tưởng và tham gia vào quá trình quyết định của câu lạc bộ. 
+  3. Nghĩa vụ của thành viên: 
+    · Tuân thủ nội quy và điều lệ của câu lạc bộ. 
+    · Đóng góp tích cực vào các hoạt động và dự án của câu lạc bộ. 
+    · Giữ gìn và bảo quản tài sản của câu lạc bộ.'));
+
+INSERT INTO CHITIETCAULACBO (MACHITIET, MACLB, EMAIL, SDT, SOLUONGDANHGIA, SAODANHGIA, LOAICLB, GIOITHIEUCHITIET, DIEULE)
+VALUES
+(3, 3, 'aiclub@uit.edu.vn', '0333333333', 53, 4, N'giáo dục - giải trí', 
+  utl_raw.cast_to_raw('Thông tin cơ bản:
+  Chào mừng bạn đến với Câu Lạc Bộ AI - nơi khơi nguồn sáng tạo và phát triển các sản phẩm độc đáo! Được thành lập bởi một nhóm sinh viên AI tại Trường Đại học Công nghệ thông tin, chúng tôi tự hào là một trong những câu lạc bộ sáng tạo và năng động nhất trong khuôn viên trường.
+  Sứ Mệnh:
+  Câu lạc bộ AI hướng tới việc tạo ra môi trường học tập và phát triển kỹ năng về lập trình, thiết kế đồ họa, âm thanh và mọi khía cạnh liên quan đến việc phát triển game. Chúng tôi mong muốn giúp các thành viên biến những ý tưởng độc đáo thành các sản phẩm game hoàn chỉnh, từ đó góp phần nâng cao trình độ chuyên môn và tạo ra những sản phẩm có giá trị.'), 
+  utl_raw.cast_to_raw('Điều 1: Mục Đích và Tôn Chỉ 
+  1. Mục đích: 
+    Câu lạc bộ Làm Game nhằm tạo ra môi trường học tập và thực hành cho các thành viên trong lĩnh vực phát triển game, bao gồm lập trình, thiết kế đồ họa, âm thanh, và quản lý dự án. 
+  2. Tôn chỉ: 
+    Khuyến khích sự sáng tạo, học hỏi lẫn nhau, và hợp tác để phát triển các sản phẩm game chất lượng, đồng thời xây dựng một cộng đồng đam mê và chuyên nghiệp.
+Điều 2: Thành Viên
+  1. Điều kiện tham gia: 
+    Bất kỳ sinh viên nào của Trường Đại học Công nghệ thông tin có đam mê và mong muốn học hỏi về phát triển game đều có thể đăng ký tham gia. 
+  2. Quyền lợi của thành viên: 
+    · Tham gia các hoạt động, workshop, và dự án do câu lạc bộ tổ chức. 
+    · Sử dụng các tài nguyên và thiết bị của câu lạc bộ cho mục đích học tập và phát triển game. 
+    · Đề xuất ý tưởng và tham gia vào quá trình quyết định của câu lạc bộ. 
+  3. Nghĩa vụ của thành viên: 
+    · Tuân thủ nội quy và điều lệ của câu lạc bộ. 
+    · Đóng góp tích cực vào các hoạt động và dự án của câu lạc bộ. 
+    · Giữ gìn và bảo quản tài sản của câu lạc bộ.'));
+
+INSERT INTO CHITIETCAULACBO (MACHITIET, MACLB, EMAIL, SDT, SOLUONGDANHGIA, SAODANHGIA, LOAICLB, GIOITHIEUCHITIET, DIEULE)
+VALUES
+(4, 4, 'clbbasketballuit@uit.edu.vn', '0333322222', 53, 4, N'giáo dục - giải trí', 
+  utl_raw.cast_to_raw('Thông tin cơ bản:
+  Chào mừng bạn đến với Câu Lạc Bộ Cầu lông - nơi khơi nguồn sáng tạo và phát triển các sản phẩm độc đáo! Được thành lập bởi một nhóm sinh viên đam mê Cầu lông tại Trường Đại học Công nghệ thông tin, chúng tôi tự hào là một trong những câu lạc bộ sáng tạo và năng động nhất trong khuôn viên trường.
+  Sứ Mệnh:
+  Câu lạc bộ Cầu lông hướng tới việc tạo ra môi trường học tập và phát triển kỹ năng về lập trình, thiết kế đồ họa, âm thanh và mọi khía cạnh liên quan đến việc phát triển game. Chúng tôi mong muốn giúp các thành viên biến những ý tưởng độc đáo thành các sản phẩm game hoàn chỉnh, từ đó góp phần nâng cao trình độ chuyên môn và tạo ra những sản phẩm có giá trị.'), 
+  utl_raw.cast_to_raw('Điều 1: Mục Đích và Tôn Chỉ 
+  1. Mục đích: 
+    Câu lạc bộ Làm Game nhằm tạo ra môi trường học tập và thực hành cho các thành viên trong lĩnh vực phát triển game, bao gồm lập trình, thiết kế đồ họa, âm thanh, và quản lý dự án. 
+  2. Tôn chỉ: 
+    Khuyến khích sự sáng tạo, học hỏi lẫn nhau, và hợp tác để phát triển các sản phẩm game chất lượng, đồng thời xây dựng một cộng đồng đam mê và chuyên nghiệp.
+Điều 2: Thành Viên
+  1. Điều kiện tham gia: 
+    Bất kỳ sinh viên nào của Trường Đại học Công nghệ thông tin có đam mê và mong muốn học hỏi về phát triển game đều có thể đăng ký tham gia. 
+  2. Quyền lợi của thành viên: 
+    · Tham gia các hoạt động, workshop, và dự án do câu lạc bộ tổ chức. 
+    · Sử dụng các tài nguyên và thiết bị của câu lạc bộ cho mục đích học tập và phát triển game. 
+    · Đề xuất ý tưởng và tham gia vào quá trình quyết định của câu lạc bộ. 
+  3. Nghĩa vụ của thành viên: 
+    · Tuân thủ nội quy và điều lệ của câu lạc bộ. 
+    · Đóng góp tích cực vào các hoạt động và dự án của câu lạc bộ. 
+    · Giữ gìn và bảo quản tài sản của câu lạc bộ.'));
+
+INSERT INTO CHITIETCAULACBO (MACHITIET, MACLB, EMAIL, SDT, SOLUONGDANHGIA, SAODANHGIA, LOAICLB, GIOITHIEUCHITIET, DIEULE)
+VALUES
+(5, 5, 'caulacbolyluantreuit@gmail.com', '0222111111', 13, 5, N'giáo dục - giải trí', 
+  utl_raw.cast_to_raw('Thông tin cơ bản:
+  Chào mừng bạn đến với Câu Lạc Bộ Lý Luận trẻ - nơi khơi nguồn sáng tạo và phát triển các sản phẩm độc đáo! Được thành lập bởi một nhóm sinh viên đam mê Thông tin tại Trường Đại học Công nghệ thông tin, chúng tôi tự hào là một trong những câu lạc bộ sáng tạo và năng động nhất trong khuôn viên trường.
+  Sứ Mệnh:
+  Câu lạc bộ Lý Luận trẻ hướng tới việc tạo ra môi trường học tập và phát triển kỹ năng về lập trình, thiết kế đồ họa, âm thanh và mọi khía cạnh liên quan đến việc phát triển game. Chúng tôi mong muốn giúp các thành viên biến những ý tưởng độc đáo thành các sản phẩm game hoàn chỉnh, từ đó góp phần nâng cao trình độ chuyên môn và tạo ra những sản phẩm có giá trị.'), 
+  utl_raw.cast_to_raw('Điều 1: Mục Đích và Tôn Chỉ 
+  1. Mục đích: 
+    Câu lạc bộ Làm Game nhằm tạo ra môi trường học tập và thực hành cho các thành viên trong lĩnh vực phát triển game, bao gồm lập trình, thiết kế đồ họa, âm thanh, và quản lý dự án. 
+  2. Tôn chỉ: 
+    Khuyến khích sự sáng tạo, học hỏi lẫn nhau, và hợp tác để phát triển các sản phẩm game chất lượng, đồng thời xây dựng một cộng đồng đam mê và chuyên nghiệp.
+Điều 2: Thành Viên
+  1. Điều kiện tham gia: 
+    Bất kỳ sinh viên nào của Trường Đại học Công nghệ thông tin có đam mê và mong muốn học hỏi về phát triển game đều có thể đăng ký tham gia. 
+  2. Quyền lợi của thành viên: 
+    · Tham gia các hoạt động, workshop, và dự án do câu lạc bộ tổ chức. 
+    · Sử dụng các tài nguyên và thiết bị của câu lạc bộ cho mục đích học tập và phát triển game. 
+    · Đề xuất ý tưởng và tham gia vào quá trình quyết định của câu lạc bộ. 
+  3. Nghĩa vụ của thành viên: 
+    · Tuân thủ nội quy và điều lệ của câu lạc bộ. 
+    · Đóng góp tích cực vào các hoạt động và dự án của câu lạc bộ. 
+    · Giữ gìn và bảo quản tài sản của câu lạc bộ.'));
+
+
+-- Insert Table THANHVIENCLB
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (21, 1, 1, N'Chủ nhiệm', TO_DATE('2022-01-15', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (22, 1, 0, N'Thành viên', TO_DATE('2022-03-10', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (23, 1, 1, N'Phó Chủ nhiệm', TO_DATE('2022-05-20', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (24, 1, 0, N'Thành viên', TO_DATE('2022-07-15', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (25, 1, 0, N'Thành viên', TO_DATE('2022-09-10', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (26, 1, 0, N'Thành viên', TO_DATE('2022-11-05', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (27, 2, 1, N'Chủ nhiệm', TO_DATE('2022-01-15', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (28, 3, 1, N'Chủ nhiệm', TO_DATE('2022-03-10', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (29, 4, 1, N'Chủ nhiệm', TO_DATE('2022-05-20', 'YYYY-MM-DD'));
+INSERT INTO THANHVIENCLB (MATK, MACLB, DUOCQUYENDANGBAI, CHUCVU, NGAYTHAMGIA)
+VALUES (30, 5, 1, N'Chủ nhiệm', TO_DATE('2022-07-15', 'YYYY-MM-DD'));
+
+-- Insert Table YEUTHICHCLB
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (21, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (22, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (23, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (24, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (25, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (26, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (27, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (28, 1);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (29, 1);
+
+
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (21, 2);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (22, 2);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (23, 2);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (24, 2);
+
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (21, 3);
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (24, 3);
+
+INSERT INTO YEUTHICHCLB (MATK, MACLB)
+VALUES (24, 4);
+
+-- Insert Table YEUTHICHCLB
+INSERT INTO YEUCAUTHAMGIACLB (MATK, MACLB)
+VALUES (30, 1);
+INSERT INTO YEUCAUTHAMGIACLB (MATK, MACLB)
+VALUES (22, 5);
+INSERT INTO YEUCAUTHAMGIACLB (MATK, MACLB)
+VALUES (21, 3);

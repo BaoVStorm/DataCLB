@@ -1,0 +1,5 @@
+- đối với mấy câu lạc bộ ông nhớ thêm câu lạc bộ đó thuộc 1 bài đăng nào đó nha
+- dữ liệu trên tui ghi bằng notepad nên chưa chắc nó chạy đc, nếu có lỗi ông cố gắn sửa dùm vs nha 
+- trong cái bang caulacbo ông thêm PHAMVI có DEFAULT "TRONGTRUONG" nha
+
+- code java tui làm xong r á có j merge lại r chạy nha, code java tui cx code chay luôn, máy thằng chương ko chạy đc code!! nên có lỗi j thì sửa dùm vs nha :((
